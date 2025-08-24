@@ -329,7 +329,7 @@ if (abs(skewness_val) < 0.5) {
   cat("- Hay más valores concentrados en la parte alta de la distribución\n")
 }
 
-# Interpretación del Kurtosis - CORREGIDO
+# Interpretación del Kurtosis 
 cat(sprintf("\nKURTOSIS: %.6f\n", kurtosis_val))
 # NOTA: En e1071, kurtosis() calcula el exceso de curtosis (kurtosis - 3)
 if (kurtosis_val < -0.5) {
