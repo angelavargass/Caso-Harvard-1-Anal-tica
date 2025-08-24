@@ -66,6 +66,7 @@ print(table(daily_visits$Period))
 # ============================================================
 # 1. Forma de la distribución de lo datos Daily Visits
 # ============================================================
+
 # Histograma general de Daily Visits
 n <- nrow(Datos)
 bins <- max(8, round(sqrt(n)))
@@ -176,6 +177,7 @@ print(dispersion_chart)
 # ============================================================================
 # 5. Histograma y normalidad de la distribución
 # ============================================================================
+
 # Histograma general
 histograma_general <- ggplot(daily_visits, aes(x = Visits)) +
   geom_histogram(bins = 30, fill = "lightblue", alpha = 0.7, color = "black") +
@@ -213,6 +215,7 @@ total_obs <- stats$n_observaciones
 #-----------------------------------------------------------------------------
 # TABLA 1: Regla Empírica Básica (±1σ, ±2σ, ±3σ)
 #-----------------------------------------------------------------------------
+
 # Crear tabla de intervalos básicos
 regla_empirica <- data.frame(
   Intervalos = c("mean ± 1 std. dev.", "mean ± 2 std. dev.", "mean ± 3 std. dev."),
@@ -329,7 +332,7 @@ if (abs(skewness_val) < 0.5) {
   cat("- Hay más valores concentrados en la parte alta de la distribución\n")
 }
 
-# Interpretación del Kurtosis 
+# Interpretación del Kurtosis - CORREGIDO
 cat(sprintf("\nKURTOSIS: %.6f\n", kurtosis_val))
 # NOTA: En e1071, kurtosis() calcula el exceso de curtosis (kurtosis - 3)
 if (kurtosis_val < -0.5) {
@@ -370,3 +373,4 @@ if(max(desviaciones_rel) < 15 && abs(skewness_val) < 1 && abs(kurtosis_val) < 2)
   if(abs(kurtosis_val) >= 2) cat("- Kurtosis indica forma muy diferente a la normal\n")
   if(max(desviaciones_rel) >= 15) cat("- Regla empírica muestra desviaciones importantes\n")
 }
+
