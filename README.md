@@ -1,4 +1,4 @@
-# 📊 Caso Harvard 1 - Web Analytics (Quality Alloys)
+# 📊 Caso Harvard 1 - Web Analytics (Quality Alloys) (Ángela Lucía Vargas, Josymar Yised Nocua, Santiago Muñoz Moreno)
 
 Este repositorio contiene el análisis de **Daily Visits** al sitio web de *Quality Alloys*, siguiendo el caso de Harvard sobre *Web Analytics*.  
 El trabajo se centra únicamente en los **visitas diarias** (Daily Visits), dejando de lado los registros semanales.
