@@ -14,6 +14,7 @@ Analizar el comportamiento de las visitas diarias al sitio web en diferentes per
 - Generar gráficas que respalden la interpretación.
 
 📂 Caso-Harvard-1-Analitica Contiene las siguientes carpetas
+
  ┣ 📁 graficas → Contiene todas las gráficas generadas con el código (histogramas, series temporales, boxplots, etc.).  
  ┣ 📁 codigo   → Incluye el script en R (`Trabajo Analitica.r`) con todo el análisis.  
  ┣ 📁 datos    → Contiene un documento Word con la explicación de los resultados del análisis y las gráficas, además del archivo original `Web_Analytics.xls`.  
